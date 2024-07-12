@@ -14,8 +14,8 @@ def read_item(item_id: int, q: Optional[str] = None):
     return {"item_id": item_id, "q": q}
 
 @app.get("/cpoms/")
-    async def root():
-        ("message": "please send a valid CPOMS request pls xoxo")
+    def read_cpoms():
+        return JSONResponse(content={"message": "please send a valid CPOMS request pls xoxo"})
 
 inventory = {
   1: {
