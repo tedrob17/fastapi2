@@ -15,7 +15,7 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 @app.get("/cpoms/")
     def read_cpoms():
-        return JSONResponse(content={"message": "please send a valid CPOMS request pls xoxo"})
+        return {"message": "please send a valid CPOMS request pls xoxo"}
 
 inventory = {
   1: {
