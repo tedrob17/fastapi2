@@ -13,9 +13,9 @@ async def root():
 def read_item(item_id: int, q: Optional[str] = None):
     return {"item_id": item_id, "q": q}
 
-@app.get("/cpoms")
+@app.get("/cpoms/")
     async def root():
-        ("oopsies": "please send a valid request pls xoxo")
+        ("message": "please send a valid CPOMS request pls xoxo")
 
 inventory = {
   1: {
